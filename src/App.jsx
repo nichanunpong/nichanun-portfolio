@@ -6,8 +6,6 @@ import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToUp";
-import BackToTop from "./components/BackToTop";
-
 function App() {
   return (
     <>

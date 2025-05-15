@@ -4,9 +4,10 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
 
+const basename = import.meta.env.DEV ? "/" : "/nichanun-portfolio/";
+
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/nichanun-portfolio">
-    <HashRouter />
+  <HashRouter basename={basename}>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );
