@@ -22,16 +22,16 @@ const Navbar = () => {
         <h1>Portfolio</h1>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
+        <li className="nav-list">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="nav-list">
           <Link to="/projects">Projects</Link>
         </li>
-        <li>
+        <li className="nav-list">
           <Link to="/about">About</Link>
         </li>
-        <li>
+        <li className="nav-list">
           <Link to="/contacts">Contacts</Link>
         </li>
       </ul>

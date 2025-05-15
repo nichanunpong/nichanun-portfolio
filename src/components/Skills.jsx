@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SkillsStyle.css";
-import { tabs, skills } from "./SkillsData";
+import { tabs, skills } from "../data/SkillsData";
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);

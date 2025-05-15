@@ -23,6 +23,9 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+.nav-list {
+  list-style-type: none;
+}
 .hamberger {
   display: none;
 }

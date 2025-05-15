@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./ExperienceStyle.css";
+import { GoDotFill } from "react-icons/go";
 
 const ExperienceCard = ({ event, isLeft }) => {
   const ref = useRef(null);
@@ -28,7 +29,17 @@ const ExperienceCard = ({ event, isLeft }) => {
         </span>
         <ul>
           {event.bullets.map((b, i) => (
-            <li key={i}>{b}</li>
+            <li key={i}>
+              {/* <GoDotFill
+                size={15}
+                style={{
+                  color: "#fff",
+                  marginRight: "1rem",
+                  marginBottom: "-0.1rem",
+                }}
+              /> */}
+              {b}
+            </li>
           ))}
         </ul>
       </div>
