@@ -1,32 +1,30 @@
 .about {
-  width: 100%;
-  margin: 3rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.about .left {
-  text-align: center;
-  margin: auto;
-  padding: 1rem;
-  max-width: 350px;
-}
-
-.about .left p {
-  margin: 1.2rem 0;
-}
-
+.about .left,
 .about .right {
-  max-width: 750px;
+  padding: 3rem 4rem;
+}
+
+.about .left .info {
+  padding-bottom: 6rem;
+}
+.about .left .info-detail {
+  color: #a5a5a5;
+  padding-top: 1rem;
+  font-size: 18px;
 }
 .right .img-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  position: relative;
+  /* position: relative;
   align-items: center;
-  text-align: center;
+  text-align: center; */
 }
 .right .img {
   max-width: 90%;
@@ -41,6 +39,60 @@
 
 .right .bottom {
   grid-column: 4 / -1;
-  grid-row: 1;
-  z-index: 5;
+  /* grid-row: 1; */
+  /* z-index: 5; */
+}
+*/ .left .info {
+  padding-bottom: 3rem;
+}
+.edication {
+  padding-bottom: 1rem;
+}
+.edication-card {
+  padding: 2rem 1rem;
+  margin: 0.4rem 0;
+  border: 1px solid #666666;
+  border-radius: 15px;
+}
+.education-detail {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  width: 100%;
+  color: #a5a5a5;
+}
+
+.certification-tab {
+  padding: 1rem;
+}
+.certificate-card {
+  display: flex;
+  justify-content: space-between;
+}
+.right .info {
+  padding-top: 3rem;
+}
+.skills-list {
+  padding-top: 1rem;
+}
+.skills-grid .skill-card {
+  font-size: 0.7rem;
+  border: 0px;
+  font-weight: 0px;
+  padding: 0.4rem;
+}
+.skills-grid {
+  display: flex;
+  gap: 0.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 840px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about .left,
+  .about .right {
+    padding: 1rem;
+  }
 }

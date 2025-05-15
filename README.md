@@ -1,12 +1,22 @@
-# React + Vite
+# nichanun-portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React and Vite to showcase projects, skills, and provide a seamless contact experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Single Page Application: Client-side routing with React Router (Home, About, Projects, Contact).
+- Responsive Design: Optimized for desktop, tablet, and mobile devices.
+- Projects Gallery: Showcases your key projects using a custom WorkCard component.
+- Contact Form: Powered by EmailJS for direct email submissions without a backend.
+- Service/Pricing Section: Displays service packages with PricingCard components.
+- Icons & Styling: Uses React Icons for visual accents and modular CSS files for styling.
+- Smooth Scrolling: Seamless navigation between sections.
 
-## Expanding the ESLint configuration
+Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (^19.1.0)
+- Vite (^6.3.5)
+- React Router DOM (^7.5.3)
+- React Icons (^5.5.0)
+- EmailJS Browser (^4.4.1)
+- gh-pages (^6.3.0) for GitHub Pages deployment

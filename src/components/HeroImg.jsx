@@ -1,24 +1,107 @@
 import "./HeroImgStyles.css";
 import introImg from "../assets/flat-lay-workstation-with-copy-space-laptop.jpg";
-import React from "react";
+import profile1 from "../assets/profile1.jpg";
+import profile2 from "../assets/profile2.JPG";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiDownload,
+  FiPhone,
+} from "react-icons/fi";
+
+const images = [profile1, profile2];
 
 const HeroImg = () => {
+  const [current, setCurrent] = useState(0);
+  const [fadeState, setFadeState] = useState("fade-in");
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setFadeState("fade-out");
+
+      setTimeout(() => {
+        setCurrent((c) => (c + 1) % images.length);
+        setFadeState("fade-in");
+      }, 1000);
+    }, 7000);
+
+    return () => {
+      clearInterval(timerId);
+    };
+  }, []);
   return (
     <div className="hero">
-      <div className="mask">
-        <img src={introImg} className="into-img" alt="IntroImg" />{" "}
-      </div>
-      <div className="content">
-        <p>Hi, I'M Nicha</p>
-        <h1>React Developer.</h1>
-        <div>
-          <Link to="/project" className="btn">
-            PROJECTS
-          </Link>
-          <Link to="/contact" className="btn bth-light">
-            CONTACT
-          </Link>
+      <div className="hero-container">
+        <div className="box left">
+          <img
+            src={images[current]}
+            className={`profile ${fadeState}`}
+            alt={`slide ${current + 1}`}
+          />
+        </div>
+        <div className="box right">
+          <div className="intro">
+            <h1>Hi, I'm Nicha</h1>
+            <p>Software Developer</p>
+            <div className="intro-detail">
+              Software Developer with 7+ years of development experience and 3
+              years in project management, specializing in full-stack
+              development, cloud computing, and Agile methodologies. Proficient
+              in JavaScript, SQL, PHP, C#, and Python with expertise in React,
+              Laravel, and AWS.
+              <div className="social-container">
+                <Link
+                  to="https://github.com/nichanunpong"
+                  className="social-link"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FiGithub />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/in/nichanun-pong/"
+                  className="social-link"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FiLinkedin />
+                </Link>
+                <Link
+                  to="mailto:nichanun.luck@gmail.com"
+                  className="social-link"
+                  aria-label="Email"
+                  target="_blank"
+                >
+                  <FiMail />
+                </Link>
+                <Link
+                  to="tel:+16726991228"
+                  className="social-link"
+                  aria-label="Phone"
+                >
+                  <FiPhone />
+                </Link>
+              </div>
+              <div className="download">
+                <Link to="/" className="btn">
+                  <FiDownload
+                    size={20}
+                    style={{
+                      color: "#000",
+                      marginRight: "1rem",
+                      marginBottom: "-0.2rem",
+                    }}
+                  />
+                  Resume
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

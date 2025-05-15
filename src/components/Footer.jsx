@@ -1,58 +1,81 @@
 import React from "react";
-import "./Footer.Style.css";
+import "./FooterStyle.css";
+import { Link } from "react-router-dom";
 import {
-  FaHome,
-  FaPhone,
-  FaMailBulk,
-  FaFacebook,
-  FaLinkedin,
-} from "react-icons/fa";
-
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiPhone,
+  FiExternalLink,
+} from "react-icons/fi";
 const Footer = () => {
   return (
-    <div className="Footer">
+    <div className="footer">
       <div className="footer-container">
         <div className="left">
-          <div className="location">
-            <FaHome size={20} style={{ color: "#fff", marginRight: "2rem" }} />
-            <div>
-              <p>123 asfd</p>
-            </div>
-          </div>
-          <div className="phone">
-            <h4>
-              <FaPhone
-                size={20}
-                style={{ color: "#fff", marginRight: "2rem" }}
+          <h4>Quick Links</h4>
+          <p>About Me</p>
+          <p>Projects</p>
+          <p>
+            Resume &nbsp;
+            <Link to="/">
+              <FiExternalLink
+                size={15}
+                style={{
+                  color: "#fff",
+                  marginRight: "1rem",
+                  marginBottom: "-0.1rem",
+                }}
               />
-              12313123
-            </h4>
-          </div>
-          <div className="email">
-            <h4>
-              <FaMailBulk
-                size={20}
-                style={{ color: "#fff", marginRight: "2rem" }}
-              />
-              afdasf@asdf
-            </h4>
-          </div>
+            </Link>
+          </p>
         </div>
         <div className="right">
-          <h4>About the company</h4>
-          <p>asfasfas asfasf asdfsadf</p>
-          <div className="social">
-            <FaFacebook
-              size={20}
-              style={{ color: "#fff", marginRight: "2rem" }}
-            />
-            <FaLinkedin
-              size={20}
-              style={{ color: "#fff", marginRight: "2rem" }}
-            />
+          <h4>Connect</h4>
+          <div className="social-container">
+            <Link
+              to="https://github.com/nichanunpong"
+              className="social-link"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiGithub />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/nichanun-pong/"
+              className="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiLinkedin />
+            </Link>
+            <Link
+              to="mailto:nichanun.luck@gmail.com"
+              className="social-link"
+              aria-label="Email"
+              target="_blank"
+            >
+              <FiMail />
+            </Link>
+            <Link
+              to="tel:+16726991228"
+              className="social-link"
+              aria-label="Phone"
+            >
+              <FiPhone />
+            </Link>
           </div>
         </div>
       </div>
+      <hr className="footer-divider" />
+      <footer className="footer-bottom">
+        <div className="footer-bottom left">
+          © 2025 Nichanun Pongpattarawit. All rights reserved.
+        </div>
+        <div className="footer-bottom right"></div>
+      </footer>
     </div>
   );
 };

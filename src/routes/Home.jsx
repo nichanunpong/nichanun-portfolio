@@ -2,14 +2,20 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import HeroImg from "../components/HeroImg";
 import Footer from "../components/Footer";
-import Work from "../components/Work";
+import Projects from "../components/Work";
+import Experience from "../components/Experience";
+import Skills from "../components/Skills";
+import BackToTop from "../components/BackToTop";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <HeroImg />
-      <Work />
+      <Skills />
+      <Experience />
+      <Projects />
+      <BackToTop />
       <Footer />
     </div>
   );
