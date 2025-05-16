@@ -6,6 +6,10 @@ import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToUp";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-BVVFDPLVQW");
+ReactGA.send("pageview");
 function App() {
   return (
     <>
