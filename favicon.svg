@@ -1,0 +1,11 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- transparent background -->
+  <rect width="64" height="64" fill="none"></rect>
+
+  <!-- two-tone "NP" with darker N and slightly more spacing -->
+  <text x="50%" y="50%" dy=".35em" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="48">
+    <tspan fill="#87CEEB">N</tspan>
+    <tspan fill="#FF69B4" dx="-10">P</tspan>
+  </text>
+</svg>
