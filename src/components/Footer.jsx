@@ -18,7 +18,7 @@ const Footer = () => {
           <p>Projects</p>
           <p>
             Resume &nbsp;
-            <Link to="/">
+            <a href="/Nichanun_Pongpattarawit_Resume.pdf" target="_blank">
               <FiExternalLink
                 size={15}
                 style={{
@@ -27,7 +27,7 @@ const Footer = () => {
                   marginBottom: "-0.1rem",
                 }}
               />
-            </Link>
+            </a>
           </p>
         </div>
         <div className="right">

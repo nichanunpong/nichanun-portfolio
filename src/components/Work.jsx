@@ -16,8 +16,10 @@ const Work = () => {
               key={ind}
               imgsrc={val.imgsrc}
               title={val.title}
+              techno={val.techno}
               text={val.text}
               view={val.view}
+              source={val.source}
             />
           );
         })}

@@ -9,7 +9,10 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <HeroImg2 heading="CONTACT" text="Let's have a chat" />
+      <HeroImg2
+        heading="Get In Touch"
+        text="Have a project in mind or want to collaborate? I'd love to hear from you!"
+      />
       <Form />
       <BackToTop />
       <Footer />

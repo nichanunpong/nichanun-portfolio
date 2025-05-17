@@ -27,7 +27,7 @@
 .pro-details p {
   padding-bottom: 1rem;
   font-size: 1.1rem;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .pro-btns {
@@ -39,6 +39,21 @@
   padding: 0.5 1rem;
 }
 
+.techno {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 1rem;
+}
+.techno-list {
+  border: 1px solid #585858;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  cursor: default;
+  transition: background 0.2s;
+}
+.techno-list:hover {
+  background-color: #585858;
+}
 /* .pro-btns .btn:hover {
   background-color: #141414;
 } */

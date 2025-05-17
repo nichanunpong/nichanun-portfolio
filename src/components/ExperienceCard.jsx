@@ -10,7 +10,7 @@ const ExperienceCard = ({ event, isLeft }) => {
     const observer = new IntersectionObserver(
       ([entry], obs) => {
         if (entry.isIntersecting) {
-          el.classList.add("visible"); // triggers your slide-in CSS
+          el.classList.add("visible");
           obs.unobserve(el);
         }
       },
@@ -22,24 +22,17 @@ const ExperienceCard = ({ event, isLeft }) => {
   return (
     <div ref={ref} className={`experience-item ${isLeft ? "left" : "right"}`}>
       <div className="content">
-        <div className="date">{event.date}</div>
+        <div className="logo-date">
+          <img src={event.logo} className="logo" />
+          <div className="date">{event.date}</div>
+        </div>
         <h3>{event.title}</h3>
         <span className="sub-title">
           <i>{event.subtitle}</i>
         </span>
         <ul>
           {event.bullets.map((b, i) => (
-            <li key={i}>
-              {/* <GoDotFill
-                size={15}
-                style={{
-                  color: "#fff",
-                  marginRight: "1rem",
-                  marginBottom: "-0.1rem",
-                }}
-              /> */}
-              {b}
-            </li>
+            <li key={i}>{b}</li>
           ))}
         </ul>
       </div>

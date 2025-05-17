@@ -1,5 +1,13 @@
+import talaadthai_logo from "../assets/talaadthai.png";
+import viriyah_logo from "../assets/viriyah.png";
+import shareinvestor_logo from "../assets/shareinvestor.jpg";
+import garena from "../assets/garena.jpg";
+import mfec_logo from "../assets/mfec.jpg";
+import foodpassion_logo from "../assets/foodpassion.jpg";
+
 const ExperenceData = [
   {
+    logo: talaadthai_logo,
     date: "Jan 2023 – Sep 2024",
     title: "Product Owner | Talaadthai Online",
     subtitle: "(Fruit and Vegetable Delivery Application)",
@@ -9,6 +17,7 @@ const ExperenceData = [
     ],
   },
   {
+    logo: viriyah_logo,
     date: "Sep 2021 – Jan 2023",
     title: "Project Manager | The Viriyah Insurance Public Company limited",
     subtitle: "(Insurance company)",
@@ -18,6 +27,7 @@ const ExperenceData = [
     ],
   },
   {
+    logo: shareinvestor_logo,
     date: "Oct 2019 – Sep 2021",
     title: "Project Management officer | Shareinvestor (Thailand) Co., Ltd.",
     subtitle: "(Software house)",
@@ -27,6 +37,7 @@ const ExperenceData = [
     ],
   },
   {
+    logo: garena,
     date: "Sep 2023 – Nov 2023",
     title: "Full-Stack Developer | Gerena Online (Thailand) Co., Ltd.",
     subtitle: "(Online game company)",
@@ -37,6 +48,7 @@ const ExperenceData = [
     ],
   },
   {
+    logo: mfec_logo,
     date: "Sep 2017 – Feb 2018",
     title: "Cloud Developer | MFEC public company limited.",
     subtitle: "(IT service provider)",
@@ -46,6 +58,7 @@ const ExperenceData = [
     ],
   },
   {
+    logo: foodpassion_logo,
     date: "Sep 2017 – Feb 2018",
     title: "Software Developer | Food Passion Co., Ltd.",
     subtitle: "(Food company)",

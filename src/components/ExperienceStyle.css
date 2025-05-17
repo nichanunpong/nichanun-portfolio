@@ -85,6 +85,18 @@
 ul {
   padding: 1rem 0.5rem 1rem 1rem;
 }
+.logo-date {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.logo {
+  width: 35px;
+}
+.date {
+  text-align: right;
+}
 
 /* Mobile styles */
 @media (max-width: 768px) {

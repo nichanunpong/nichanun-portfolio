@@ -12,7 +12,7 @@ const Projects = () => {
       <Navbar />
       <HeroImg2 heading="PROJECT." text="Some of my most recent works" />
       <Work />
-      <PricingCard />
+      {/* <PricingCard /> */}
       <BackToTop />
       <Footer />
     </div>
