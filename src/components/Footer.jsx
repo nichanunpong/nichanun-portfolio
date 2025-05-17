@@ -18,7 +18,7 @@ const Footer = () => {
           <p>Projects</p>
           <p>
             Resume &nbsp;
-            <a href="/Nichanun_Pongpattarawit_Resume.pdf" target="_blank">
+            <a href="./Nichanun_Pongpattarawit_Resume.pdf" target="_blank">
               <FiExternalLink
                 size={15}
                 style={{
