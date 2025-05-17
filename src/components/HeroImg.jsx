@@ -44,7 +44,7 @@ const HeroImg = () => {
         </div>
         <div className="box right">
           <div className="intro">
-            <h1>Hi, I'm Nicha</h1>
+            <h1>Hi, I'm Luck</h1>
             <p>Software Developer</p>
             <div className="intro-detail">
               Software Developer with 7+ years of development experience and 3
