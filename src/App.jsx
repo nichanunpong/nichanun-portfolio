@@ -8,7 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToUp";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-BVVFDPLVQW");
+ReactGA.initialize("G-JY848G3RYS");
 ReactGA.send("pageview");
 function App() {
   return (
