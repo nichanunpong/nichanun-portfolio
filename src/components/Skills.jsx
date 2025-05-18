@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./SkillsStyle.css";
-import { tabs, skills } from "../data/SkillsData";
-
+import { tabs, skills } from "../data/skillsData";
 const Skills = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
@@ -11,6 +10,7 @@ const Skills = () => {
         <h2 className="section-title">Technical Skills</h2>
         <p className="section-subtitle">
           My expertise across various technologies and tools
+          <img src="" />
         </p>
 
         <div className="tabs-container">
@@ -26,8 +26,10 @@ const Skills = () => {
         </div>
 
         <div className="skills">
-          {skills[activeTab].map((name) => (
+          {skills[activeTab].map(({ name, Icon }) => (
             <div key={name} className="skill-card">
+              {Icon ? <img src={Icon} alt="" className="icon" /> : ""}
+
               {name}
             </div>
           ))}

@@ -2,13 +2,7 @@ import React, { useRef } from "react";
 import "./FormStyle.css";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
-import {
-  FiGithub,
-  FiLinkedin,
-  FiMail,
-  FiDownload,
-  FiPhone,
-} from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiPhone } from "react-icons/fi";
 const Form = () => {
   const form = useRef();
 
@@ -16,7 +10,7 @@ const Form = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_a6f44ej", "template_k93c96c", form.current, {
+      .sendForm("service_a6f44ejs", "template_k93c96c", form.current, {
         publicKey: "aSjYVaok8Qj202D_D",
       })
       .then(

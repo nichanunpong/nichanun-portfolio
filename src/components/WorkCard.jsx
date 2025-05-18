@@ -6,7 +6,7 @@ const WorkCard = ({ imgsrc, title, text, techno, view, source }) => {
   return (
     <div className="project-card">
       <img src={imgsrc} alt="image" />
-      <h2 className="porject-title">{title}</h2>
+      <h2 className="project-title">{title}</h2>
       <div className="pro-details">
         <p>{text}</p>
         <div className="techno">

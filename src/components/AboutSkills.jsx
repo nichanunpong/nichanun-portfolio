@@ -13,7 +13,7 @@ const AboutSkills = () => {
 
           {/* Grid of skill cards for this category */}
           <div className="skills-grid">
-            {skills[tab].map((name) => (
+            {skills[tab].map(({ name }) => (
               <div key={name} className="skill-card detail">
                 {name}
               </div>

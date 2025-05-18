@@ -13,6 +13,7 @@
 .project-card {
   background: #1a1919;
   padding: 1.2rem 1rem;
+  /* display: flex; */
 }
 
 .project-card img {
@@ -57,10 +58,13 @@
 /* .pro-btns .btn:hover {
   background-color: #141414;
 } */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 840px) {
   .project-container {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .project-card {
+    padding: 1.5em 2em;
   }
 }

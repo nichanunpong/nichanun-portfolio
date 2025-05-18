@@ -88,7 +88,11 @@ const HeroImg = () => {
                 </Link>
               </div>
               <div className="download">
-                <Link to="/" className="btn">
+                <a
+                  href="./Nichanun_Pongpattarawit_Resume.pdf"
+                  target="_blank"
+                  className="btn"
+                >
                   <FiDownload
                     size={20}
                     style={{
@@ -98,7 +102,7 @@ const HeroImg = () => {
                     }}
                   />
                   Resume
-                </Link>
+                </a>
               </div>
             </div>
           </div>

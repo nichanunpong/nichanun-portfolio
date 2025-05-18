@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import "./ExperienceStyle.css";
-import { GoDotFill } from "react-icons/go";
 
 const ExperienceCard = ({ event, isLeft }) => {
   const ref = useRef(null);
@@ -23,6 +22,7 @@ const ExperienceCard = ({ event, isLeft }) => {
     <div ref={ref} className={`experience-item ${isLeft ? "left" : "right"}`}>
       <div className="content">
         <div className="logo-date">
+          {console.log("event", event)}
           <img src={event.logo} className="logo" />
           <div className="date">{event.date}</div>
         </div>
@@ -35,6 +35,14 @@ const ExperienceCard = ({ event, isLeft }) => {
             <li key={i}>{b}</li>
           ))}
         </ul>
+
+        <div className="project">
+          {event.project.map((e, i) => (
+            <div className="project-list" key={i}>
+              {e}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

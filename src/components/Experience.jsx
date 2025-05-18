@@ -1,6 +1,6 @@
 import React from "react";
 import "./ExperienceStyle.css";
-import ExperienceData from "./ExperienceData";
+import ExperienceData from "../data/experienceData";
 import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {

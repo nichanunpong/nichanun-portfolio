@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div>
       <Navbar />
-      <HeroImg2 heading="PROJECT." text="Some of my most recent works" />
+      <HeroImg2 heading="PROJECT" text="Some of my most recent works" />
       <Work />
       {/* <PricingCard /> */}
       <BackToTop />

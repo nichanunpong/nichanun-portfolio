@@ -3,7 +3,7 @@ export const education = [
     title: "Post-degree Diploma of Data Analytics",
     school: "Douglas College",
     location: "Vancouver, Canada",
-    period: "2024 - Present",
+    period: "2024 - 2025 (Aug)",
   },
   {
     title: "Master of Management, Entrepreneurship, and Innovation",

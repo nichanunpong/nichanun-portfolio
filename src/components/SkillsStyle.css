@@ -74,14 +74,14 @@
   display: flex;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .skill-card {
   display: flex;
   justify-content: center;
   padding: 0.5rem 1rem;
-  background-color: #1f2937;
+  background-color: #2a3545;
   border-radius: 0.5rem;
   font-size: 0.875rem;
   font-weight: 500;
@@ -90,13 +90,20 @@
 }
 
 .skill-card:hover {
-  background-color: #374151;
+  background-color: #546177;
   border: 1px solid #6b7280;
+}
+.icon {
+  width: 15px;
 }
 
 @media (max-width: 840px) {
   .tabs-container {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .skills {
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 }
