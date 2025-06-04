@@ -11,6 +11,7 @@ import {
   FiDownload,
   FiPhone,
 } from 'react-icons/fi';
+import { AiFillMediumSquare } from 'react-icons/ai';
 
 const images = [profile1, profile2];
 
@@ -68,6 +69,14 @@ const HeroImg = () => {
                   target='_blank'
                   rel='noopener noreferrer'>
                   <FiLinkedin />
+                </Link>
+                <Link
+                  to='https://lucknicha.medium.com/'
+                  className='social-link'
+                  aria-label='Medium'
+                  target='_blank'
+                  rel='noopener noreferrer'>
+                  <AiFillMediumSquare />
                 </Link>
                 <Link
                   to='mailto:nichanun.luck@gmail.com'
