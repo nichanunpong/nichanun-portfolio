@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 2rem;
+  margin-bottom: 5em;
 }
 .contact-form-card {
   padding: 2rem;
@@ -47,7 +48,7 @@ form textarea {
   color: #f4f4f4;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 840px) {
   form {
     padding: 30px;
   }
