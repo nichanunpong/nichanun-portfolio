@@ -42,7 +42,7 @@ const ExperenceData = [
   {
     logo: garena,
     date: 'Sep 2023 – Nov 2023',
-    title: 'Full-Stack Developer | Garena Online (Thailand) Co., Ltd.',
+    title: 'Full Stack Developer | Garena Online (Thailand) Co., Ltd.',
     subtitle: '(Online game company)',
     bullets: [
       'Developed a website to support E-Sport competitions, enabling seamless event management and user engagement.',
