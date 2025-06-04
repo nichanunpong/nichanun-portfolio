@@ -45,13 +45,13 @@ const HeroImg = () => {
         <div className='box right'>
           <div className='intro'>
             <h1>Hi, I'm Luck</h1>
-            <p>Software Developer</p>
+            <p>Nichanun Pongpattarawit</p>
             <div className='intro-detail'>
-              Software Developer with 7+ years of development experience and 3
-              years in project management, specializing in full-stack
-              development, cloud computing, and Agile methodologies. Proficient
-              in JavaScript, SQL, PHP, C#, and Python with expertise in React,
-              Laravel, and AWS.
+              A software developer with over 7 years of experience in
+              development and 3 years in project management, specializing in
+              full-stack development, cloud computing, and Agile methodologies.
+              Proficient in JavaScript, SQL, PHP, C#, and Python, with expertise
+              in React, Laravel, and AWS.
               <div className='social-container'>
                 <Link
                   to='https://github.com/nichanunpong'
