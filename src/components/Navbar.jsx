@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "./NavbarStyles.css";
-import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import React, { useState } from 'react';
+import './NavbarStyles.css';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -15,31 +15,31 @@ const Navbar = () => {
       setColor(false);
     }
   };
-  window.addEventListener("scroll", changeColor);
+  window.addEventListener('scroll', changeColor);
   return (
-    <div className={color ? "header header-bg" : "header"}>
-      <Link to={"/"}>
+    <div className={color ? 'header header-bg' : 'header'}>
+      <Link to={'/'}>
         <h1>Portfolio</h1>
       </Link>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-list">
-          <Link to="/">Home</Link>
+      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <li className='nav-list'>
+          <Link to='/'>Home</Link>
         </li>
-        <li className="nav-list">
-          <Link to="/projects">Projects</Link>
+        <li className='nav-list'>
+          <Link to='/projects'>Projects</Link>
         </li>
-        <li className="nav-list">
-          <Link to="/about">About</Link>
+        <li className='nav-list'>
+          <Link to='/about'>About</Link>
         </li>
-        <li className="nav-list">
-          <Link to="/contacts">Contacts</Link>
+        <li className='nav-list'>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
-      <div className="hamberger" onClick={handleClick}>
+      <div className='hamberger' onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} style={{ color: "#fff" }} />
+          <FaTimes size={20} style={{ color: '#fff' }} />
         ) : (
-          <FaBars size={20} style={{ color: "#fff" }} />
+          <FaBars size={20} style={{ color: '#fff' }} />
         )}
       </div>
     </div>

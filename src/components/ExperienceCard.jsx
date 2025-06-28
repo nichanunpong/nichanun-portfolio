@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from "react";
-import "./ExperienceStyle.css";
+import React, { useRef, useEffect } from 'react';
+import './ExperienceStyle.css';
 
 const ExperienceCard = ({ event, isLeft }) => {
   const ref = useRef(null);
@@ -9,7 +9,7 @@ const ExperienceCard = ({ event, isLeft }) => {
     const observer = new IntersectionObserver(
       ([entry], obs) => {
         if (entry.isIntersecting) {
-          el.classList.add("visible");
+          el.classList.add('visible');
           obs.unobserve(el);
         }
       },
@@ -19,15 +19,18 @@ const ExperienceCard = ({ event, isLeft }) => {
     return () => observer.disconnect();
   }, []);
   return (
-    <div ref={ref} className={`experience-item ${isLeft ? "left" : "right"}`}>
-      <div className="content">
-        <div className="logo-date">
-          {console.log("event", event)}
-          <img src={event.logo} className="logo" />
-          <div className="date">{event.date}</div>
+    <div ref={ref} className={`experience-item ${isLeft ? 'left' : 'right'}`}>
+      <div className='content'>
+        <div className='logo-date'>
+          <img
+            src={event.logo}
+            className='logo'
+            alt={`${event.title} company logo`}
+          />
+          <div className='date'>{event.date}</div>
         </div>
         <h3>{event.title}</h3>
-        <span className="sub-title">
+        <span className='sub-title'>
           <i>{event.subtitle}</i>
         </span>
         <ul>
@@ -36,9 +39,9 @@ const ExperienceCard = ({ event, isLeft }) => {
           ))}
         </ul>
 
-        <div className="project">
+        <div className='project'>
           {event.project.map((e, i) => (
-            <div className="project-list" key={i}>
+            <div className='project-list' key={i}>
               {e}
             </div>
           ))}

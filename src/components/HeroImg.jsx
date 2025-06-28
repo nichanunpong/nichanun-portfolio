@@ -1,5 +1,4 @@
 import './HeroImgStyles.css';
-import introImg from '../assets/flat-lay-workstation-with-copy-space-laptop.jpg';
 import profile1 from '../assets/profile1.jpg';
 import profile2 from '../assets/profile2.JPG';
 import React, { useState, useEffect } from 'react';
